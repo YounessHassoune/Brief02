@@ -1,0 +1,295 @@
+.gallery  {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+   
+
+
+
+}
+
+
+.colum{
+   
+    width:282px;
+    height: 450px;
+    margin: 40px 70px;
+    transform-style: preserve-3d;
+
+    transition: all 0.7s ease;  
+  
+}
+
+.front{
+ position: absolute;
+ backface-visibility: hidden;
+
+   
+}
+
+.back{
+
+   width: 282px;
+   height: 450px;
+   backface-visibility: hidden;
+   transform: rotateY(180deg);
+   z-index: -1;
+    
+   
+}
+
+.ba{
+ 
+
+   width: 282px;
+   height: 450px;  
+   filter: blur(8px);
+ 
+}
+
+.zindex{
+  position: absolute;
+  top: 0px;
+  color:white;
+  text-align: center;
+  padding: 50px 50px;
+  
+}
+.zindex h2{
+    color:white;
+}
+
+
+.colum:hover{
+
+    transform: rotateY(180deg);
+
+ 
+    
+}
+
+/*--------------------evetn---------------------------*/
+
+
+
+.heading-title{
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+    /*===============About Event============================*/
+.about-event{
+    max-width: 100%;
+    display: flex;
+    margin: 30px;
+    flex-direction: row;
+    justify-content: space-around;
+  
+}
+
+
+.item1{
+
+    flex: 1;
+    margin: 30px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #fafafa;
+   
+}
+
+.item2{
+    
+    flex: 1;
+    margin: 30px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #fafafa;
+   
+
+
+    
+}
+
+.item1:hover , .item2:hover {
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;  
+    transform: scale(1.05);
+   
+  }
+  
+
+.imagee{
+    
+    width: 100%;
+    padding: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+    
+  
+}
+
+.para{
+  
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    font-weight:inherit;
+}
+
+/*===============Date & Location============================*/
+
+.time-where{
+    max-width: 100%;
+    display: flex;
+    margin: 30px;
+    
+    flex-direction: row;
+   justify-content: center;
+
+}
+
+.item4{
+    flex: 1;
+    margin: 30px;
+    padding:40px;
+    color: black;
+    text-align: justify;
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+
+}
+.item4 h2{
+    padding-left: 30px;
+}
+.item4 button{
+   padding: 15px 20px;
+   width: 200px;
+   color :white;
+   border-radius: 50px;
+   margin-top: 20px;
+   background-color: #81256c;
+   font-size: 15x;
+   margin-left: 20px;
+
+
+}
+.item4 p{
+    line-height: 1 cm;
+    padding-left: 30px;
+}
+
+
+.item5{
+    flex: 1;
+    margin: 30px;
+    padding: 40px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.item5 iframe{
+    width:100%;
+    height: 100%;
+}
+
+.item4:hover , .item5:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;  
+    transform: scale(1.05);
+   
+   
+  }
+   /*===============Speakers============================*/
+.speakers{
+    max-width: 100%;
+    display: flex;
+    margin: 60px auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+   
+   
+}
+
+
+.item6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px auto;
+    margin-top: 20px;
+
+
+}
+.item7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px auto;
+    margin-top: 20px;
+   
+}
+.item8{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px auto;
+    margin-top:20px;
+}
+
+.name{
+    padding-top: 30px;
+    font-weight: bold;
+    color: black;
+}
+.img-speaker{
+ 
+  border-radius: 50%;
+  filter: grayscale(100%);
+
+
+  
+}
+
+.img-speaker:hover{
+
+    filter: grayscale(0%);
+
+  }
+  
+
+
+  /*===============Media Query============================*/
+@media screen and (max-width: 868px){
+    .about-event{
+      flex-direction: column;
+    }
+    .heading-title{
+        font-size: 30px;
+   
+    }
+    .time-where{
+      flex-direction: column;
+    
+    }
+    .speakers{
+      flex-direction: column;
+    
+    }
+    
+  }

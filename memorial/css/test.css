@@ -1,0 +1,76 @@
+.gallery  {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+   
+
+
+
+}
+
+
+.colum{
+   
+    width:282px;
+    height: 450px;
+    margin: 40px 70px;
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;  
+  
+}
+
+.front{
+ position: absolute;
+ backface-visibility: hidden;
+
+   
+}
+
+.back{
+
+   width: 282px;
+   height: 450px;
+   backface-visibility: hidden;
+   transform: rotateY(180deg);
+   z-index: -1;
+    
+   
+}
+
+.ba{
+ 
+
+   width: 282px;
+   height: 450px;  
+   filter: blur(8px);
+ 
+}
+
+.zindex{
+  position: absolute;
+  top: 0px;
+  color:white;
+  text-align: center;
+  padding: 50px 50px;
+  
+}
+.zindex h2{
+    color:white;
+}
+
+
+.colum:hover{
+
+    transform: rotateY(180deg);
+    box-shadow: 0 10px 40px 0 white;
+ 
+    
+}
+
+
+
+
+
