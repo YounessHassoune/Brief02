@@ -19,6 +19,6 @@ NB : Respecter les bonnes pratiques de l'UX/UI et l'adaptabilité avec les appar
 Modalités de travail : Travail à titre individuel
 Temporalité : 7 jours
 
-##Livrables
+## Livrables
 
 Lien GitHub contenant le fichier source de la maquette ainsi que le projet HTML/CSS Soumission de la réalisation sur la plateforme Simplonline
